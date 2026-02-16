@@ -1,0 +1,138 @@
+.view-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.view-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.view-header h2 {
+  color: #1a202c;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.btn-add {
+  background: #4a90e2;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
+}
+
+.btn-add:hover {
+  background: #357abd;
+  transform: translateY(-2px);
+}
+
+/* Table Design */
+.table-wrapper {
+  background: white; 
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  border: 1px solid #fee2e2; 
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.student-table th {
+  background: #fff1f1; 
+  padding: 18px;
+  color: #991b1b; 
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid #fecaca;
+}
+
+.student-table td {
+  padding: 18px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  font-size: 0.95rem;
+}
+
+.student-table tr:hover {
+  background: #fff8f8; 
+}
+
+.font-bold { font-weight: 600; color: #1e293b; }
+
+/* Course Badge */
+.course-badge {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Action Cell */
+.actions-cell {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-link {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 14px;
+  border: 1px solid #4a90e2;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.edit-link:hover {
+  background: #4a90e2;
+  color: white;
+}
+
+.delete-btn {
+  background: #fff1f2;
+  color: #e11d48;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background: #e11d48;
+  color: white;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 30px;
+  color: #4a5568;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #edf2f7;
+  transition: 0.3s;
+}
+
+.back-link:hover {
+  background-color: #e2e8f0;
+  color: #1a202c;
+}
