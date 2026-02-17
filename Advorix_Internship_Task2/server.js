@@ -1,17 +1,22 @@
-require("dotenv").config();
 const express = require("express");
-const mongoose = require("mongoose");
 const cors = require("cors");
+const dotenv = require("dotenv");
+const path = require('path');
+const connectDB = require("./backend/config/db");
+
+dotenv.config({ path: path.resolve(__dirname, './.env') });
+connectDB();
 
 const app = express();
 
-app.use(express.json());
 app.use(cors());
+app.use(express.json());
 
-mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log("MongoDB Connected"))
-  .catch(err => console.log(err));
+app.use("/api/auth", require("./backend/routes/authRoutes"));
 
-app.use("/api/auth", require("./routes/authRoutes"));
+app.get("/", (req, res) => {
+  res.send("Task2 Auth API Working ✅");
+});
 
-app.listen(5000, () => console.log("Server running on port 5000"));
+const PORT = process.env.PORT || 5001;
+app.listen(PORT, () => console.log(`Auth Server running on port ${PORT}`));
