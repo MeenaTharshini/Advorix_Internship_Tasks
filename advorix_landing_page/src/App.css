@@ -1,0 +1,24 @@
+.container{
+  text-align:center;
+  margin-top:120px;
+}
+
+h1{
+  margin-bottom:40px;
+}
+
+button{
+  display:block;
+  margin:20px auto;
+  padding:15px 40px;
+  font-size:18px;
+  border:none;
+  border-radius:8px;
+  background:#007bff;
+  color:white;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#0056b3;
+}
