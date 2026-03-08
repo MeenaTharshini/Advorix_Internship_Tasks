@@ -16,12 +16,12 @@ function App() {
 
   return (
     <div className="landing-container">
-      <h1>Adcorix Internship Projects</h1>
+      <h1>Advorix Internship Projects</h1>
       <p>Select any project to explore its features and functionality</p>
 
       <div className="button-group">
         <button className="btn-primary" onClick={openTask1}>
-          Task 1 - Student Management System
+          Task 1 - Student Management System CRUD
         </button>
 
         <button className="btn-primary" onClick={openTask2}>
@@ -29,7 +29,7 @@ function App() {
         </button>
 
         <button className="btn-primary" onClick={openTask3}>
-          Task 3 - Project
+          Task 3 - Multipage application
         </button>
       </div>
 
