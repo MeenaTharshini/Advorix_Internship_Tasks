@@ -7,29 +7,35 @@ function App() {
   };
 
   const openTask2 = () => {
-    window.location.href = "http://localhost:3002";
+    window.location.href = "https://advorix-internship-task2-frontend.onrender.com";
   };
 
   const openTask3 = () => {
-    window.location.href = "http://localhost:3003";
+    window.location.href = "https://advorix-internship-task3-orig.onrender.com";
   };
 
   return (
-    <div className="container">
+    <div className="landing-container">
       <h1>Adcorix Internship Projects</h1>
+      <p>Select any project to explore its features and functionality</p>
 
-      <button onClick={openTask1}>
-        Task 1 - Student Management System
-      </button>
+      <div className="button-group">
+        <button className="btn-primary" onClick={openTask1}>
+          Task 1 - Student Management System
+        </button>
 
-      <button onClick={openTask2}>
-        Task 2 - Authentication System
-      </button>
+        <button className="btn-primary" onClick={openTask2}>
+          Task 2 - Authentication System
+        </button>
 
-      <button onClick={openTask3}>
-        Task 3 - Project
-      </button>
+        <button className="btn-primary" onClick={openTask3}>
+          Task 3 - Project
+        </button>
+      </div>
 
+      <footer className="footer">
+        © 2026 Meena Tharshini | Advorix Internship
+      </footer>
     </div>
   );
 }
