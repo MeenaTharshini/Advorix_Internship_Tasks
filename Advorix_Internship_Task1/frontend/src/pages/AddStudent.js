@@ -21,7 +21,7 @@ function AddStudent() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/api/students", {
+      const response = await fetch("https://advorix-internship-task1-backend.onrender.com/api/students", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

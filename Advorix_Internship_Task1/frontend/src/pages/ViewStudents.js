@@ -11,7 +11,7 @@ function ViewStudents() {
 
   const fetchStudents = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/students");
+      const response = await fetch("https://advorix-internship-task1-backend.onrender.com/api/students");
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const data = await response.json();
       setStudents(data);
@@ -23,7 +23,7 @@ function ViewStudents() {
 
   const deleteStudent = async (id) => {
     try {
-      await fetch(`http://localhost:5000/api/students/${id}`, { method: "DELETE" });
+      await fetch(`https://advorix-internship-task1-backend.onrender.com/api/students/${id}`, { method: "DELETE" });
       alert("Student Deleted Successfully");
       fetchStudents();
     } catch (error) {
