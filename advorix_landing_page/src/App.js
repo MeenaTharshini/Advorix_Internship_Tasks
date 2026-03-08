@@ -16,8 +16,8 @@ function App() {
 
   return (
     <div className="landing-container">
-      <h1>Advorix Internship Projects</h1>
-      <p>Select any project to explore its features and functionality</p>
+      <h1>Advorix Internship Tasks</h1>
+      <p>Select any task to explore its features and functionality</p>
 
       <div className="button-group">
         <button className="btn-primary" onClick={openTask1}>
